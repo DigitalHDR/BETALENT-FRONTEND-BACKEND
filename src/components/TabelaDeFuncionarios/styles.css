@@ -1,0 +1,149 @@
+.tabela-container {
+  padding: 26px 32px;
+  margin-bottom: 100px;
+}
+
+.tabela {
+  margin-top: 16px;
+  overflow: hidden;
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+  box-shadow: 0px 1px 2px 0px #00000033;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.tabela .tbody-tr {
+  background: #ffffff;
+}
+
+.tabela thead tr {
+  font-weight: 500;
+  color: #ffffff;
+  background: #0500ff;
+  text-align: left;
+}
+
+.tabela thead tr th {
+  font-weight: 500;
+}
+
+.tabela tbody tr td {
+  font-weight: 400;
+  color: #1c1c1c;
+}
+
+.tabela thead tr th,
+.tabela tbody tr td {
+  padding-left: 32px;
+}
+
+.tabela td {
+  height: 49px;
+}
+
+.tabela tr {
+  border: 1px solid #ccc;
+  height: 49px !important;
+}
+
+.tabela img {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.circle,
+.charmDown,
+.expanded-info,
+.accordion-content,
+.tabela .tbody-tr td:nth-child(6) {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .tabela-container {
+    padding: 0px 19px;
+    width: 335px;
+  }
+
+  .tabela thead tr {
+    width: 375px;
+  }
+
+  .tabela thead tr th,
+  .tabela tbody tr td {
+    padding-left: 16px;
+  }
+
+  th:nth-child(3),
+  th:nth-child(4),
+  th:nth-child(6) {
+    display: none;
+  }
+
+  td:nth-child(3),
+  td:nth-child(4) {
+    display: none;
+  }
+
+  .circle {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    height: 47px;
+    position: relative;
+    right: 41px;
+  }
+
+  .circle img {
+    width: 8px;
+    height: 8px;
+  }
+
+  td.icon-cargo,
+  td.icon-admissao {
+    display: inline-block;
+  }
+
+  .tabela .tbody-tr td:nth-child(5) {
+    display: none;
+  }
+
+  .charmDown,
+  .tabela .tbody-tr td:nth-child(6) {
+    display: flex;
+    cursor: pointer;
+  }
+
+  .charmDown {
+    transition: transform 0.3s ease;
+    margin-right: -8px;
+  }
+
+  .charmDown.rotate {
+    transform: rotate(180deg);
+  }
+
+  .accordion-content {
+    display: table-row;
+    background: #ffffff;
+  }
+
+  .accordion-active {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .accordion-box-tag-p {
+    font-weight: 500;
+  }
+
+  .accordion-right {
+    text-align: end;
+    padding-right: 16px;
+  }
+}

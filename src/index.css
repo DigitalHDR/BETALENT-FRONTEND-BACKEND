@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Roboto', serif;
+  background: #f0f0f0;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.container-global {
+  width: 1024px;
+  margin: auto;
+  flex-direction: column;
+}
+
+@media (max-width: 1024px) {
+  .container-global {
+    width: 375px;
+  }
+}

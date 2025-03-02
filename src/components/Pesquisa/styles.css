@@ -1,0 +1,57 @@
+.box-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: Helvetica;
+}
+
+.box-pesquisa {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-left: 16px;
+}
+
+.pesquisa {
+  width: 287px;
+  border-radius: 8px;
+  border-width: 1px;
+  border: 1px solid #dfdfdf;
+  padding-top: 12px;
+  padding-right: 16px;
+  padding-bottom: 12px;
+  padding-left: 16px;
+  background: #ffffff;
+  border: 1px solid #dfdfdf;
+}
+
+.icone-pesquisa {
+  padding-right: 16px;
+  position: absolute;
+}
+
+input {
+  outline: none;
+  border: none;
+}
+
+.icone-pesquisa  {
+  font-family: Helvetica;
+}
+
+@media (max-width: 1024px) {
+  .box-main {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .box-pesquisa {
+    padding-left: 0px;
+  }
+
+  .pesquisa {
+    width: 299px;
+  }
+}
