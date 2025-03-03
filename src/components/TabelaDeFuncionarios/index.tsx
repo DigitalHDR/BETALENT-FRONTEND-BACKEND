@@ -10,6 +10,7 @@ import Pesquisa from '../Pesquisa'
 // Importações de assets (imagens)
 import Circle from '../../assets/Circle.png'
 import charmDown from '../../assets/charmDown.png'
+import Spinner from '../../assets/Spinner.svg'
 
 // Importações de utilitários
 import formatPhoneNumber from '../../utils/formatUtils'
@@ -92,6 +93,12 @@ const TabelaDeFuncionarios: React.FC = () => {
           ))}
         </tbody>
       </table>
+      {filteredEmployees.length <= 0 && (
+        <div className="loading">
+          <img src={Spinner} alt="Carregando" />
+          <h4>Carregando Lista de Funcionários...</h4>
+        </div>
+      )}
     </div>
   )
 }

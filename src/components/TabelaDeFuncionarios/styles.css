@@ -63,6 +63,17 @@
   display: none;
 }
 
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.loading h4 {
+  font-weight: 500;
+}
+
 @media (max-width: 1024px) {
   .tabela-container {
     padding: 0px 19px;
